@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "424903807307",
+    "project_id": "gym-mangement",
+    "storage_bucket": "gym-mangement.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424903807307:android:ceac637687c4444ddd98ce",
+        "android_client_info": {
+          "package_name": "com.example.gymmangement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424903807307-6uira2lhknotgm5vtaoj0rahvdf5hm0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbwrnvabQ0lrrO9LGcXSGR3X8GEShMIIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424903807307-6uira2lhknotgm5vtaoj0rahvdf5hm0i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
