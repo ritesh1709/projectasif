@@ -23,7 +23,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="290dp"
-                android:src="@drawable/img1" />
+                android:src="@drawable/iimagee" />
 
             <EditText
                 android:id="@+id/login_email"
