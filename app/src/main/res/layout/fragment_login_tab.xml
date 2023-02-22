@@ -60,6 +60,7 @@
                 android:id="@+id/LOGIN_button"
                 android:textSize="18sp"
                 android:text="LOGIN"
+                android:background="@drawable/edittext"
                 app:cornerRadius ="30dp"/>
 
 

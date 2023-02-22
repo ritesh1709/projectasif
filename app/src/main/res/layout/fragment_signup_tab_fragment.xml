@@ -69,6 +69,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:text="Signup"
+                android:background="@drawable/edittext"
                 android:textSize="18sp"
                 app:cornerRadius="30dp" />
 

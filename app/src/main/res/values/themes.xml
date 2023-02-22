@@ -1,8 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.GymMangement" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.GymMangement" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#131A18</item>
+        <item name="colorPrimary">#C332BACC</item>
         <item name="colorPrimaryVariant">#70C4E6</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
