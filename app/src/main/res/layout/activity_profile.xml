@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img0"
+    android:background="@drawable/img90"
     tools:context=".ProfileActivity">
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -22,26 +22,30 @@
             android:layout_height="match_parent"
             app:iss_auto_cycle="true"
             app:iss_corner_radius="20"
-            app:iss_delay="1000"
-            app:iss_period="1000"
+            app:iss_delay="1700"
+            app:iss_period="1700"
             app:iss_title_background="@drawable/gradient" />
 
     </androidx.cardview.widget.CardView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="1000dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="610dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="600dp">
 
         <Button
             android:id="@+id/NEXT"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:background="@drawable/secondimg"
+            android:layout_height="55dp"
+            android:background="@drawable/icon8"
             android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-            tools:layout_editor_absoluteX="20dp" />
-
+            tools:layout_editor_absoluteY="57dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
