@@ -5,22 +5,23 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.example.gymmangement.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Bottom_menu extends AppCompatActivity {
 
-    ActivityMainBinding binding;
     BottomNavigationView bottomNavigationView;
 
+    @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        setContentView(R.layout.activiy_bottom_menu);
+
+
 
         replaceFragment(new HomeFragment());
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
