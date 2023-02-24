@@ -9,10 +9,12 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.example.gymmangement.databinding.ActivityMainBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Bottom_menu extends AppCompatActivity {
 
     ActivityMainBinding binding;
+    BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,12 +23,10 @@ public class Bottom_menu extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         replaceFragment(new HomeFragment());
-        binding.
-
-
-        binding.bottomNavigationView.setOnSelectedListener(item -> {
-
-            switch (item.getitemid()) {
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        bottomNavigationView.setBackground(null);
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            switch (item.getItemId()) {
                 case R.id.home:
                     replaceFragment(new HomeFragment());
                     break;
@@ -46,6 +46,7 @@ public class Bottom_menu extends AppCompatActivity {
 
             return true;
         });
+
     }
 
     private void replaceFragment(Fragment fragment) {
