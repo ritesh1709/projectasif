@@ -24,12 +24,9 @@ public class Bottom_menu extends AppCompatActivity {
         bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()) {
                 case R.id.home:
-                    replaceFragment(new HomeFragment());
+                    setContentView(R.layout.fragment_home);
                     break;
 
-                case R.id.shorts:
-                    replaceFragment(new ShortsFragment());
-                    break;
 
                 case R.id.subscriptions:
                     replaceFragment(new SubscriptionFragment());

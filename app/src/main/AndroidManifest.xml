@@ -12,7 +12,7 @@
         android:theme="@style/Theme.GymMangement"
         tools:targetApi="31">
         <activity
-            android:name=".RecyclerViewDetailed"
+            android:name=".ActivityOne"
             android:exported="false" />
         <activity
             android:name=".Bottom_menu"
