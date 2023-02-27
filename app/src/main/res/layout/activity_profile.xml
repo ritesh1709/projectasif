@@ -38,14 +38,14 @@
         <Button
             android:id="@+id/NEXT"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:background="@drawable/icon8"
+            android:layout_height="60dp"
+            android:background="@drawable/icon55"
             android:text=""
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-            tools:layout_editor_absoluteY="57dp" />
+            tools:layout_editor_absoluteY="55dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
