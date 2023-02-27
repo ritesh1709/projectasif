@@ -1,75 +1,59 @@
 package com.example.gymmangement;
 
-import android.content.Intent;
-import android.graphics.Color;
-
-import android.os.Bundle;
-import android.view.View;
-import android.widget.GridLayout;
-import android.widget.GridView;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-public class HomeFragment extends AppCompatActivity {
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
 
-    GridLayout mainGrid;
+
+
+public class HomeFragment extends AppCompatActivity implements View.OnClickListener {
+
+    public CardView card1 , card2, card3, card4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_home);
 
-        mainGrid = (GridLayout) findViewById(R.id.mainGrid);
+        card1= (CardView) findViewById(R.id.c1);
+        card2= (CardView) findViewById(R.id.c2);
+        card3= (CardView) findViewById(R.id.c3);
+        card4= (CardView) findViewById(R.id.c4);
 
-
-
-        //Set Event
-        setSingleEvent(mainGrid);
-        //setToggleEvent(mainGrid);
+        card1.setOnClickListener(this);
+        card2.setOnClickListener(this);
+        card3.setOnClickListener(this);
+        card4.setOnClickListener(this);
     }
 
-    private void setToggleEvent(GridLayout mainGrid) {
-        //Loop all child item of Main Grid
-        for (int i = 0; i < mainGrid.getChildCount(); i++) {
-            //You can see , all child item is CardView , so we just cast object to CardView
-            final CardView cardView = (CardView) mainGrid.getChildAt(i);
-            cardView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if (cardView.getCardBackgroundColor().getDefaultColor() == -1) {
-                        //Change background color
-                        cardView.setCardBackgroundColor(Color.parseColor("#FF6F00"));
-                        Toast.makeText(HomeFragment.this, "State : True", Toast.LENGTH_SHORT).show();
+    @Override
+    public void onClick(View v) {
+        Intent intent;
 
-                    } else {
-                        //Change background color
-                        cardView.setCardBackgroundColor(Color.parseColor("#FFFFFF"));
-                        Toast.makeText(HomeFragment.this, "State : False", Toast.LENGTH_SHORT).show();
-                    }
-                }
-            });
+        switch (v.getId()){
+            case R.id.c1:
+                intent = new Intent(this,One.class);
+                startActivity(intent);
+                break;
+
+            case R.id.c2:
+                intent= new Intent(this, two.class);
+                startActivity(intent);
+                break;
+
+            case R.id.c3:
+                intent= new Intent(this, Three.class);
+                startActivity(intent);
+                break;
+
+            case R.id.c4:
+                intent= new Intent(this, Four.class);
+                startActivity(intent);
+                break;
         }
-    }
 
-    private void setSingleEvent(GridLayout mainGrid) {
-        //Loop all child item of Main Grid
-        for (int i = 0; i < mainGrid.getChildCount(); i++) {
-            //You can see , all child item is CardView , so we just cast object to CardView
-            CardView cardView = (CardView) mainGrid.getChildAt(i);
-            final int finalI = i;
-            cardView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-
-                    Intent intent = new Intent(
-                            HomeFragment.this,ActivityOne.class);
-                    intent.putExtra("info","This is activity from card item index  "+finalI);
-                    startActivity(intent);
-
-                }
-            });
-        }
     }
 }

@@ -12,7 +12,16 @@
         android:theme="@style/Theme.GymMangement"
         tools:targetApi="31">
         <activity
-            android:name=".ActivityOne"
+            android:name=".Four"
+            android:exported="false" />
+        <activity
+            android:name=".Three"
+            android:exported="false" />
+        <activity
+            android:name=".two"
+            android:exported="false" />
+        <activity
+            android:name=".One"
             android:exported="false" />
         <activity
             android:name=".Bottom_menu"
