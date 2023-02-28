@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">gym mangement</string>
+    <string name="title_activity_newbottom">newbottom</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_library">libraryString</string>
+    <string name="title_subcription">subcription</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>

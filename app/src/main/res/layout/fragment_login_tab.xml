@@ -37,20 +37,26 @@
                 android:hint="Email"
                 android:padding="20dp" />
 
-            <EditText
-                android:layout_width="300dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:id="@+id/login_password"
-                android:layout_marginTop="7dp"
-                android:padding="20dp"
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:passwordToggleEnabled="true"
                 android:hint="Password"
-                android:inputType="textPassword"
-                android:drawableLeft="@drawable/baseline_lock_24"
-                android:drawablePadding="8dp"
-                android:background="@drawable/edittext_bkg"/>
+                app:startIconDrawable="@drawable/baseline_lock_24"
+                app:startIconTint="@color/lavender">
 
-
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_password"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/edittext_bkg"
+                    android:drawablePadding="1dp"
+                    android:inputType="textPassword"
+                    android:padding="20dp" />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:layout_width="300dp"

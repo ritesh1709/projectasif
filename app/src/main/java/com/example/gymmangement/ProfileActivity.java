@@ -26,7 +26,7 @@ public class ProfileActivity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ProfileActivity.this,Bottom_menu.class));
+                startActivity(new Intent(ProfileActivity.this,newbottom.class));
             }
         });
         ImageSlider imageSlider = findViewById(R.id.imageSlider);

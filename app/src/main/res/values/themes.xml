@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.GymMangement" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+    <style name="Theme.GymMangement" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#C332BACC</item>
         <item name="colorPrimaryVariant">#70C4E6</item>
